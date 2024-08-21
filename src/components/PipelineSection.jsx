@@ -13,7 +13,7 @@ function PipelineSection() {
       <h1 className="title" style={{ backgroundImage: `url(${headerBg})` }}>
         CPU Em Campo: Entendendo os Computadores Através do Futebol
       </h1>      
-      <div className="intro">
+      <div className="intro" id = "intro">
         <h2>Introdução à organização e arquitetura de computadores e por quê conectar com o futebol</h2>
           <p>
             A organização e arquitetura de computadores são conceitos fundamentais para entender como os computadores modernos funcionam. Eles abrangem a maneira como os componentes internos de um computador são organizados e como esses componentes interagem para realizar tarefas complexas de maneira eficiente. Esses conceitos incluem o estudo de processadores, memórias, interfaces de entrada e saída, e os métodos pelos quais esses componentes se comunicam e executam instruções.
@@ -26,7 +26,7 @@ function PipelineSection() {
           </p>
       </div>
 
-      <div className="introduction">
+      <div className="introduction" id = "pipeline">
         <h2>O que é Pipeline?</h2>
         <p>O pipeline é uma técnica utilizada em processadores modernos para melhorar o desempenho ao executar várias instruções simultaneamente. Assim como uma linha de montagem em uma fábrica, onde diferentes etapas de montagem ocorrem em paralelo, o pipeline divide o processamento de instruções da CPU em várias etapas que podem ser realizadas simultaneamente. Isso permite que a CPU execute múltiplas instruções em diferentes estágios ao mesmo tempo, aumentando a eficiência e a velocidade de processamento. Vamos explorar como isso funciona com uma analogia do futebol.</p>
       </div>
@@ -57,7 +57,7 @@ function PipelineSection() {
 
 <p>Para entender melhor, imagine que as ações dos jogadores em um campo de futebol ocorram de forma sobreposta. Enquanto um jogador está decidindo seu próximo movimento, o outro jogador está em busca da bola. No entanto, esse processo pode levar a conflitos, semelhantes aos que ocorrem em um pipeline de CPU. Por exemplo, imagine que dois jogadores estão pedindo a bola ao mesmo tempo. No mundo real, apenas um jogador pode receber a bola por vez. O segundo jogador precisará aguardar até que o primeiro complete sua ação com a bola antes de poder continuar.</p><p> Da mesma forma, em um pipeline de CPU, se dois componentes requisitam o mesmo recurso ou dado simultaneamente, um deles pode ter que esperar até que o outro termine sua operação. Por exemplo, se dois componentes diferentes da CPU solicitam acesso ao mesmo bloco de memória cache, apenas um deles pode acessar o dado de cada vez, e o outro terá que aguardar até que o recurso esteja disponível. Isso pode causar atrasos e é um exemplo clássico de conflitos no pipeline.</p>      </div>
       
-      <div className="description">
+      <div className="description" id = "cache">
         <h2>Descrição Técnica dos Caches e Funções de Mapeamento</h2>
         <p><strong>1. Definição de Cache:</strong> O cache é uma memória de acesso rápido que armazena uma cópia das informações que são frequentemente acessadas pela CPU. O objetivo do cache é reduzir o tempo de acesso aos dados e melhorar o desempenho geral do sistema.</p>
         <p><strong>2. Funções de Mapeamento:</strong> Existem diferentes métodos para mapear dados no cache, incluindo mapeamento direto, associativo e associativo por conjunto:</p>
@@ -73,7 +73,7 @@ function PipelineSection() {
   <p>Vamos usar uma analogia de futebol para entender o cache e suas funções de mapeamento. Para ilustrar utilizaremos imagens geradas pela IA <a href="https://gencraft.com/generate" target="_blank" rel="noopener noreferrer">Gencraft.</a></p>
   <ul>
     <li>
-      <strong>1. Definição de Cache:</strong> Imagine um time de futebol que mantém um armário com os itens essenciais que eles usam frequentemente durante os jogos, como luvas de goleiro e bolas de treino. Esse armário é o cache, que armazena os itens que são mais usados para acesso rápido.
+      <strong>1. Definição de Cache:</strong> Imagine um time de futebol que mantém um armário com os itens essenciais que eles usam frequentemente durante os jogos, como as camisetas de cada jogador. Esse armário é o cache, que armazena os itens que são mais usados para acesso rápido.
     </li>
     <li>
       <strong>2. Mapeamento Direto:</strong> Suponha que você tem um armário com compartimentos específicos para diferentes tipos de itens. Cada tipo de item tem seu lugar fixo. Isso é semelhante ao mapeamento direto, onde cada bloco de memória tem um lugar específico no cache.<br/> Na nossa analogia do armário, cada jogador tem um compartimento que guarda sua própria camiseta de jogo, exclusivamente.
